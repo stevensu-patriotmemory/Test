@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>失落的方舟 副本攻略</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚔️ 失落的方舟 副本攻略</h1>
+            <p class="subtitle">完整的副本收益數據與攻略指南</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- 搜索和篩選區域 -->
+            <div class="controls">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-box" 
+                    placeholder="🔍 搜索副本名稱..."
+                >
+                
+                <div class="filters">
+                    <label>難度篩選：</label>
+                    <select id="difficultyFilter">
+                        <option value="">全部</option>
+                        <option value="單人">單人</option>
+                        <option value="普通">普通</option>
+                        <option value="困難">困難</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 副本數據表 -->
+            <div class="table-wrapper">
+                <table id="dungeonTable" class="dungeon-table">
+                    <thead>
+                        <tr>
+                            <th>副本名稱</th>
+                            <th>難度</th>
+                            <th>開口1</th>
+                            <th>開口2</th>
+                            <th>開口3</th>
+                            <th>開口4</th>
+                            <th>總計</th>
+                            <th>額外獎勵消耗</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- 動態生成的內容 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 無結果提示 -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>找不到符合條件的副本。請嘗試其他搜索條件。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 失落的方舟副本攻略 | 最後更新：2026年3月10日</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
